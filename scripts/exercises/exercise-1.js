@@ -14,3 +14,12 @@
 	We sleep in if it is not a weekday or we're on holidays. 
 	The function returns true if we sleep in.
 */
+
+function sleepIn(weekday, vacation){
+		if (vacation == true || weekday == false){
+			return true;
+		}
+		else {
+			return false;
+		}		
+}

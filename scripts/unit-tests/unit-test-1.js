@@ -27,7 +27,7 @@ QUnit.module("Exercise 1", () => {
 		var result = sleepIn(weekday, vacation);
 		
 		// Assert
-		assert.notOk(result, "Passed!. We cannot sleep during a weekday without holidays");
+		assert.equal(result, false, "Passed!. We cannot sleep during a weekday without holidays");
 	});
 	
 	test("sleepIn should return TRUE during the weekend", assert => {
