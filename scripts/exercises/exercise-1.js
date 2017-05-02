@@ -15,11 +15,10 @@
 	The function returns true if we sleep in.
 */
 
-function sleepIn(weekday, vacation){
-		if (vacation == true || weekday == false){
+var sleepIn = (weekday, vacation) => {
+	if (vacation || !weekday){
 			return true;
 		}
-		else {
-			return false;
-		}		
-}
+	
+	return false;
+};
