@@ -38,6 +38,34 @@ QUnit.module("Exercise 3", () => {
 		  );
 	});
 	
+	test("missingChar should return an error message when number is negative", assert => {
+		
+		// Arrange
+		text = "valid text";
+		number = -1;
+		
+		// Act & Assert
+		  assert.throws(
+			() => { missingChar(text, number); },
+			(error) => { return error.toString() === "Number cannot be negative or bigger than text length";},
+			"Passed!. Number was negative"
+		  );
+	});
+	
+	test("missingChar should return an error message when number is bigger than text's length", assert => {
+		
+		// Arrange
+		text = "valid text";
+		number = 50;
+		
+		// Act & Assert
+		  assert.throws(
+			() => { missingChar(text, number); },
+			(error) => { return error.toString() === "Number cannot be negative or bigger than text length";},
+			"Passed!. Number was bigger than text's length"
+		  );
+	});
+	
 	test("missingChar should return a new string with a missing character", assert => {
 		
 		// Arrange
