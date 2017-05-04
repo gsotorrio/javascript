@@ -15,7 +15,7 @@
 	The function returns true if we sleep in.
 */
 
-var sleepIn = (weekday, vacation) => {
+const sleepIn = (weekday, vacation) => {
 	if (vacation || !weekday){
 			return true;
 		}

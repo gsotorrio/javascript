@@ -13,12 +13,12 @@
 	except returns double the absolute difference if X is over 21.
 */
 
-var diff21 = (number) => {
-	let result = 21 - number;
+const diff21 = (number) => {
+	
 	
 	if (number > 21){
-		result = (number - 21)*2;
+		return (number - 21)*2;
 	}
 	
-	return result;
+	return 21 - number;
 };
