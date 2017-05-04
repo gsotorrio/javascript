@@ -17,11 +17,11 @@
 		- number = "5"
 		- result = "Guillrmo"
 		
-	If the function receives a no valid string, it throws an error with the following message:
-		- Error message: "Text cannot be empty"
+	If the function receives a no valid string, it throws an exception error with the following message:
+		- Exception message: "Text cannot be empty"
 	 
 	If the number is not within the text's length range, it throws an error:
-		- Error message: "Number cannot be negative or bigger than text length"
+		- Exception message: "Number cannot be negative or bigger than text length"
 */
 
 const missingChar = (text, number) => {

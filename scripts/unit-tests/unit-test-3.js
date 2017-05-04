@@ -2,7 +2,7 @@ QUnit.module("Exercise 3", () => {
 	
 	var text, number;
 	
-	test("missingChar should return an error message when text is empty", assert => {
+	test("missingChar should return an exception message when text is empty", assert => {
 		
 		// Arrange
 		text = "";
@@ -15,7 +15,7 @@ QUnit.module("Exercise 3", () => {
 		  );
 	});
 	
-	test("missingChar should return an error message when text is null", assert => {
+	test("missingChar should return an exception message when text is null", assert => {
 		
 		// Arrange
 		text = null;
@@ -28,7 +28,7 @@ QUnit.module("Exercise 3", () => {
 		  );
 	});
 	
-	test("missingChar should return an error message when text is undefined", assert => {
+	test("missingChar should return an exception message when text is undefined", assert => {
 		
 		// Act & Assert
 		  assert.throws(
@@ -38,7 +38,7 @@ QUnit.module("Exercise 3", () => {
 		  );
 	});
 	
-	test("missingChar should return an error message when number is negative", assert => {
+	test("missingChar should return an exception message when number is negative", assert => {
 		
 		// Arrange
 		text = "valid text";
@@ -52,7 +52,7 @@ QUnit.module("Exercise 3", () => {
 		  );
 	});
 	
-	test("missingChar should return an error message when number is bigger than text's length", assert => {
+	test("missingChar should return an exception message when number is bigger than text's length", assert => {
 		
 		// Arrange
 		text = "valid text";
