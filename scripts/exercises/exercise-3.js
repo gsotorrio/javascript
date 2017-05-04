@@ -24,5 +24,16 @@
 		- Error message: "Number cannot be negative or bigger than text length"
 */
 
+const missingChar = (text, number) => {
+	if (text == "" || text == null) {
+		return "Text cannot be empty";
+	}
+	
+	if (number < 0 || number > text.length){
+		return "Number cannot be negative or bigger than text length";
+	}
+	
+	return text.slice(0, number - 1) + text.slice(number);
+};
 
 
