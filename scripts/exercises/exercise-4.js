@@ -16,3 +16,11 @@
 	The original string will be length 1 or more.
 	If the string is not valid, it returns an empty string.
 */
+
+const backAround = (text) => {
+	if (text.length >= 0 || text != null || typeof(text) == "undefined"){
+		return text.slice(-1) + text + text.slice(-1);
+	}
+	
+	return " ";	
+};
