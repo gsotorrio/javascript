@@ -18,9 +18,9 @@
 */
 
 const backAround = (text) => {
-	if (text.length >= 0 || text != null || typeof(text) == "undefined"){
+	if (text != null){
 		return text.slice(-1) + text + text.slice(-1);
 	}
 	
-	return " ";	
+	return "";	
 };
