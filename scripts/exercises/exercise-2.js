@@ -14,8 +14,6 @@
 */
 
 const diff21 = (number) => {
-	
-	
 	if (number > 21){
 		return (number - 21)*2;
 	}
