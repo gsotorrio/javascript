@@ -2,7 +2,7 @@
 
 /* 
 --------------------
-	EXERCISE 4
+	EXERCISE 5
 --------------------
 
 	Write a function called "hasTeen" which takes the following parameters:
