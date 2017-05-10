@@ -16,15 +16,7 @@
 
 const hasTeen = (x, y, z) => {
 	
-	if(x >= 13 && x <= 19){
-		return true;
-	}
-	else if(y >= 13 && y <= 19){
-		return true;
-	}
-	else if(z >= 13 && z <= 19) {
-		return true;
-	}
-			
+	return (x >= 13 && x <= 19 || y >= 13 && y <= 19 || z >= 13 && z <= 19);
+		
 	return false;
 }

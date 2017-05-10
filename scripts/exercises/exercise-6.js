@@ -17,7 +17,5 @@ const mixStart = (text) => {
 		return false;
 	}
 	
-	if (text.slice(1, 3) === "ix"){
-		return true;
-	}
+	return (text.slice(1, 3) === "ix");	
 }

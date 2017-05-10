@@ -25,22 +25,21 @@
 */
 
 const missingChar = (text, number) => {
-	try{	
-		return text.slice(0, number - 1) + text.slice(number);
-	}
+		
+		//return text.slice(0, number - 1) + text.slice(number);
+	
 
-	catch(error)
-	{
-		if (text == null) {
-			throw Error("Text cannot be empty");
-		}
-	}
-	catch(error)
-	{
-		if (number <= 0 || number > text.length){
-			throw Error("Number cannot be negative or bigger than text length");
-		}
-	}
+	
+	
+		//if (text == null) {
+		//	throw Error("Text cannot be empty");
+		//}
+	
+	
+		//if (number <= 0 || number > text.length){
+		//	throw Error("Number cannot be negative or bigger than text length");
+		//}
+	
 };
 
 
