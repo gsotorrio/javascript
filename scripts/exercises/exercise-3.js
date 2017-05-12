@@ -35,7 +35,7 @@ const throwException = (message) => {
 
 
 const missingChar = (text, number) => {
-		if (text == null) {
+		if (!text) {
 			throw new throwExceptionEmpty("Text cannot be empty");
 		}
 		

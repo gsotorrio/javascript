@@ -13,3 +13,11 @@
 	We are in trouble if the parrot is talking and the hour is before 7 or after 20. 
 	Return true if we are in trouble.
 */
+
+const parrotTrouble = (isTalking, hour) => {
+	if (isTalking && hour < 7 || hour > 20){
+		return true;
+	}
+	
+	return false;
+}
