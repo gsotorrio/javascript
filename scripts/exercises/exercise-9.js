@@ -15,9 +15,5 @@
 */
 
 const parrotTrouble = (isTalking, hour) => {
-	if (isTalking && hour < 7 || hour > 20){
-		return true;
-	}
-	
-	return false;
+	return (isTalking && (hour < 7 || hour > 20));
 }
