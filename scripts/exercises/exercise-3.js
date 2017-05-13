@@ -24,33 +24,16 @@
 		- Exception message: "Number cannot be negative or bigger than text length"
 */
 
-const throwExceptionEmpty = (message) => {
-	this.message = message;
-	this.name = "throwExceptionEmpty";
-}
-
-const throwException = (message) => {
-	this.message = message;
-}
-
-
 const missingChar = (text, number) => {
 		if (!text) {
-			throw new throwExceptionEmpty("Text cannot be empty");
+			throw "Text cannot be empty";
 		}
 		
-		return text.slice(0, number - 1) + text.slice(number);
-	
-
-	
-	
+		if (number <= 0 || number > text.length){
+			throw "Number cannot be negative or bigger than text length";
+		}
 		
-	
-	
-		//if (number <= 0 || number > text.length){
-		//	throw Error("Number cannot be negative or bigger than text length");
-		//}
-	
+		return text.slice(0, number) + text.slice(number +1);
 };
 
 
