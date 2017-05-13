@@ -14,3 +14,14 @@
 	Except if the parameter "isNegative" is true, then return true only if both are negative.
 */
 
+const posNeg = (x, y, isNegative) => {
+	if ((x < 0 && y >= 0) || (x >= 0 && y < 0)){
+		return true;
+	}
+	if(isNegative && x < 0 && y < 0){
+		return true;
+	}
+	if (isNegative && (x < 0 && y >= 0) || (x >= 0 && y < 0)){
+		return false;
+	}
+}
