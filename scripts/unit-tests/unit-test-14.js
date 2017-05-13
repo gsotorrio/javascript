@@ -1,17 +1,43 @@
-QUnit.module("Exercise 20", () => {
+QUnit.module("Exercise 14", () => {
 	
-	let cards;
+	let x, y;
 	
-	test("isBlackJack should return SUM when there are not onces", assert => {
+	test("loneTeen should return FALSE when x and y are teen", assert => {
 		
 		// Arrange
-		cards = [10, 5, 7];
-		const expected = 22;
+		x = 13
+		y = 19;
 		
 		// Act
-		var actual = isBlackJack(cards);
+		var result = loneTeen(x, y);
 		
 		// Assert
-		assert.equal(actual, expected, "Passed!. 10 + 5 + 7 = 22");
+		assert.notOk(result, "Passed!. x = 13 and y = 19");
+	});
+	
+	test("loneTeen should return TRUE when x is teen but not y", assert => {
+		
+		// Arrange
+		x = 13
+		y = 25;
+		
+		// Act
+		var result = loneTeen(x, y);
+		
+		// Assert
+		assert.ok(result, "Passed!. x = 13 and y = 25");
+	});
+	
+	test("loneTeen should return TRUE when y is teen but not x", assert => {
+		
+		// Arrange
+		x = 5
+		y = 15;
+		
+		// Act
+		var result = loneTeen(x, y);
+		
+		// Assert
+		assert.ok(result, "Passed!. x = 5 and y = 15");
 	});
 });
