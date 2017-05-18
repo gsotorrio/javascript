@@ -14,7 +14,7 @@
 
 const stringWithE = (text) => {
 	
-	if (!text || (text.match(/e/g)).length > 3 || text.replace(/[^e]/g, "").length == 0){
+	if (!text || text.replace(/[^e]/g, "").length > 3 || text.replace(/[^e]/g, "").length == 0){
 		return false;
 	}
 	
