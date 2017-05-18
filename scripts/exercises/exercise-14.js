@@ -13,4 +13,10 @@
 	Given 2 int values, return true if one or the other is teen, but not both.
 */
 
-
+const loneTeen = (x, y) => {
+	if (x >= 13 && x <= 19 && y >= 13 && y <= 19){
+		return false;
+	}
+	
+	return (x >= 13 && x <= 19 || y >= 13 && y <= 19);
+}
