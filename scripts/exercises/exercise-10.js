@@ -19,9 +19,8 @@ const posNeg = (x, y, isNegative) => {
 		return true;
 	}
 	
-	if (x < 0 && y >= 0 || x >= 0 && y < 0){
-		return true;
-	}
+	return (x < 0 && y >= 0 || x >= 0 && y < 0);
+	
 	
 	if (isNegative && x < 0 && y >= 0 || x >= 0 && y < 0){
 		return false;
