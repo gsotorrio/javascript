@@ -105,4 +105,30 @@ QUnit.module("Exercise 16", () =>{
 		// Assert
 		assert.ok(result, "Passed!. x = 40 & y = 50")
 	});
+	
+	test("in3050 should return FALSE when x is in 30-40 and y is in 40-50", assert => {
+		
+		// Arrange
+		x = 35;
+		y = 45;
+		
+		// Act 
+		var result = in3050(x, y);
+		
+		// Assert
+		assert.notOk(result, "Passed!. x = 35 & y = 45")
+	});
+	
+	test("in3050 should return FALSE when x is in 40-50 and y is in 30-40", assert => {
+		
+		// Arrange
+		x = 45;
+		y = 35;
+		
+		// Act 
+		var result = in3050(x, y);
+		
+		// Assert
+		assert.notOk(result, "Passed!. x = 45 & y = 35")
+	});
 });

@@ -65,7 +65,7 @@ QUnit.module("Exercise 7", () => {
 	test("stringWithE should return TRUE when text have 1, 2 or 3 'e'", assert => {
 		
 		// Arrange
-		text = "Helen";
+		text = "You and Helen";
 		
 		// Act
 		const result = stringWithE(text);

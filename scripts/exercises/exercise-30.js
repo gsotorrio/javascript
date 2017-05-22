@@ -7,5 +7,6 @@
 	
 	Write a function called "isBlackJack" which takes the following parameters:
 		- cards: Array
+	
 */
 
