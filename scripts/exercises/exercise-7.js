@@ -18,5 +18,5 @@ const stringWithE = (text) => {
 		return false;
 	}
 	
-	return (text.slice(0,1) == "e" || text.slice(1,2) == "e" || text.slice(2,3) == "e");	
+	return (text.replace(/[^e]/g, "").length <= 3);	
 }
