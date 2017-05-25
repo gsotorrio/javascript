@@ -14,9 +14,11 @@
 */
 
 const loneTeen = (x, y) => {
-	if (x >= 13 && x <= 19 && y >= 13 && y <= 19){
-		return false;
-	}
+	//if (x >= 13 && x <= 19 && y >= 13 && y <= 19){
+	//	return false;
+	//}
 	
-	return (x >= 13 && x <= 19 || y >= 13 && y <= 19);
+	//return (x >= 13 && x <= 19 || y >= 13 && y <= 19);
+	
+	return !(x >= 13 && x <= 19 && y >= 13 && y <= 19);
 }
