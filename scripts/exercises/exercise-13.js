@@ -14,9 +14,11 @@
 */
 
 const icyHot = (temp1, temp2) => {
-	if(temp1 > 100 && temp2 > 100 || temp1 == 100 && temp2 > 100 || temp1 < 0 && temp2 == 0 || temp1 < 0 && temp2 < 0){
-		return false;
-	}
+	//if(temp1 > 100 && temp2 > 100 || temp1 == 100 && temp2 > 100 || temp1 < 0 && temp2 == 0 || temp1 < 0 && temp2 < 0){
+	//	return false;
+	//}
 	
-	return (temp1 < 0 || temp2 < 0 && temp1 > 100 || temp2 > 100);
+	//return (temp1 < 0 || temp2 < 0 && temp1 > 100 || temp2 > 100);
+	
+	return (temp1 < 0 && temp2 > 100 || temp1 > 100 && temp2 < 0);
 }
