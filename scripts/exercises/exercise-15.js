@@ -14,7 +14,7 @@
 */
 
 const startOz = (text) => {
-	
+	/*
 	if(text.slice(0,2) == "oz"){
 		return "oz";
 	}
@@ -26,4 +26,20 @@ const startOz = (text) => {
 	}
 	
 	return "";
+	*/
+	
+	let result = "";
+	
+	const first = text.slice(0, 1);
+	const second = text.slice(1, 2);
+	
+	if (first === "o") {
+		result = result + first;
+	}
+	
+	if (second === "z") {
+		result = result + second;
+	}
+	
+	return result;
 }
