@@ -12,7 +12,7 @@
 */
 
 const frontBack = (text) => {
-	if (!text){
+/*	if (!text){
 		return "";
 	}
 	
@@ -23,4 +23,18 @@ const frontBack = (text) => {
 	array.push(firstCharacter);
 	
 	return array.join("");
+*/
+	if (!text){
+		return "";
+	}
+	
+	if (text.length == 1) {
+		return text;
+	}
+	
+	const first = text.charAt(0); 						// See what made charAt
+	const middle = text.slice(1, text.length -1);
+	const last = text.charAt(text.length -1);
+	
+	return last + middle + first;	
 }
