@@ -15,6 +15,7 @@ Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
 */
 
 const lastDigit = (x, y) => {
-	return x.toString().split('').pop() == y.toString().split('').pop();
-	return false;
+	/* return x.toString().split('').pop() == y.toString().split('').pop(); */
+	
+	return (x % 10 == y % 10);
 }

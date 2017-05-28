@@ -15,7 +15,5 @@ or they are both in the range 40..50 inclusive.
 */
 
 const in3050 = (x, y) => {
-	
-	return (x >= 30 && x <= 50) && (y >= 30 && y <= 50);
-	return false;
+	return (x >= 30 && x <= 40 && y >= 30 && y <= 40 || x >= 40 && x <= 50 && y >= 40 && y <= 50);
 }
