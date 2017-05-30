@@ -1,4 +1,4 @@
-QUnit.module("Exercise 30", () => {
+QUnit.module("Exercise 19", () => {
 	
 	let cards;
 	
