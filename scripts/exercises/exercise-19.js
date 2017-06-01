@@ -19,16 +19,13 @@ const isBlackJack = (cards) => {
 	var index = cards.indexOf(1);
 	var result = 0;
 	
-	if(index == -1){
-		for (var i =0; i < cards.length; i++){
-			 result += cards[i];
-		}	
-		return result;
-	}
-	
 	for (var i =0; i < cards.length; i++){
 			 result += cards[i];
-		}
+		}	
+		
+	if(index == -1){
+		return result;
+	}
 	
 	if (index != -1 && result >11) {
 		return result;
